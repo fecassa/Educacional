@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "941e5c54-bb8a-4419-a1ea-6415b8a4d20c",
+		"_postman_id": "c199f8cf-7e00-48e6-ab75-ced1166a7dce",
 		"name": "Evolucional",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -8,10 +8,28 @@
 		{
 			"name": "Login",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"userName\": \"candidato-evolucional\",\r\n  \"password\": 123456\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:55571/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55571",
+					"path": [
+						"api",
+						"Login"
+					]
 				}
 			},
 			"response": []
