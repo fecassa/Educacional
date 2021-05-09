@@ -19,6 +19,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{54AE832C-DC6D-49EB-8E20-6D5231B3B608}"
 	ProjectSection(SolutionItems) = preProject
 		Evolucional.postman_collection.json = Evolucional.postman_collection.json
+		Import.png = Import.png
+		Login.png = Login.png
+		Report.png = Report.png
+		Student.png = Student.png
+		StudentSubject.png = StudentSubject.png
+		Subject.png = Subject.png
 	EndProjectSection
 EndProject
 Global
