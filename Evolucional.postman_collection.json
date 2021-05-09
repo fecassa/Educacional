@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "941e5c54-bb8a-4419-a1ea-6415b8a4d20c",
+		"name": "Evolucional",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:55571/api/Student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55571",
+					"path": [
+						"api",
+						"Student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImNhbmRpZGF0by1ldm9sdWNpb25hbCIsIm5iZiI6MTYyMDU5MTMxNywiZXhwIjoxNjIwNTkxNjE3LCJpYXQiOjE2MjA1OTEzMTd9.8e15vys2ECqV_QMDhoRKCBiZ4qYu3KaRKqdQbi2S_H4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:55571/api/Subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55571",
+					"path": [
+						"api",
+						"Subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudentSubject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImNhbmRpZGF0by1ldm9sdWNpb25hbCIsIm5iZiI6MTYyMDU5MTc1MCwiZXhwIjoxNjIwNTkyMDUwLCJpYXQiOjE2MjA1OTE3NTB9.BEnBzrYodCKwjsBPvrafNSasrAQziUvaTjYV2FOuHX0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:55571/api/StudentSubject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55571",
+					"path": [
+						"api",
+						"StudentSubject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImNhbmRpZGF0by1ldm9sdWNpb25hbCIsIm5iZiI6MTYyMDU5MTMxNywiZXhwIjoxNjIwNTkxNjE3LCJpYXQiOjE2MjA1OTEzMTd9.8e15vys2ECqV_QMDhoRKCBiZ4qYu3KaRKqdQbi2S_H4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:55571/api/Report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55571",
+					"path": [
+						"api",
+						"Report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

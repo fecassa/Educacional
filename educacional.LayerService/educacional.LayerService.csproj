@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\educacional.LayerDomain\educacional.LayerDomain.csproj" />
+    <ProjectReference Include="..\educacional.LayerInfrastructure\educacional.LayerInfrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
