@@ -27,6 +27,11 @@ Não foi possível entregar a parte visual da aplicação. Porém todo o desenho
 7. Invocar a API Report, para gerar o relatório de alunos e obter o link para download do arquivo excel
 
 
-
+![plot](https://github.com/fecassa/Educacional/raw/master/Import.png)
+![plot](https://github.com/fecassa/Educacional/raw/master/Login.png)
+![plot](https://github.com/fecassa/Educacional/raw/master/Student.png)
+![plot](https://github.com/fecassa/Educacional/raw/master/Subject.png)
+![plot](https://github.com/fecassa/Educacional/raw/master/StudentSubject.png)
+![plot](https://github.com/fecassa/Educacional/raw/master/Report.png)
 
 
