@@ -26,8 +26,18 @@ namespace educacional.LayerApplication
         {
             services.AddDbContext<educacional.LayerInfrastructure.AppContext>(opt =>
                opt.UseSqlServer(Configuration.GetConnectionString("evo-sql")));
-                        
-            services.AddCors();
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://example.com",
+                                            "http://www.contoso.com",
+                                            "http://localhost:4200");
+                    });
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -73,6 +83,9 @@ namespace educacional.LayerApplication
 
             app.UseAuthentication();
             app.UseRouting();
+            
+            app.UseCors();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
