@@ -34,7 +34,7 @@ namespace educacional.LayerApplication
                     {
                         builder.WithOrigins("http://example.com",
                                             "http://www.contoso.com",
-                                            "http://localhost:4200");
+                                            "http://localhost:4200").AllowAnyHeader();
                     });
             });
 

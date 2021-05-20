@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\educacional.LayerDomain\educacional.LayerDomain.csproj" />
-    <ProjectReference Include="..\educacional.LayerInfrastructure\educacional.LayerInfrastructure.csproj" />
+    <ProjectReference Include="..\educacional.LayerDomain\educacional.Domain.csproj" />
+    <ProjectReference Include="..\educacional.LayerInfrastructure\educacional.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

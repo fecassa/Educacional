@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\educacional.LayerDomain\educacional.LayerDomain.csproj" />
+    <ProjectReference Include="..\educacional.LayerDomain\educacional.Domain.csproj" />
   </ItemGroup>
 
 </Project>
