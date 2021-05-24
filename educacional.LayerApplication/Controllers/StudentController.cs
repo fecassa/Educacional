@@ -22,7 +22,7 @@ namespace educacional.LayerApplication.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize]        
         public IActionResult InsertDataStudents()
         {
             try
@@ -34,6 +34,14 @@ namespace educacional.LayerApplication.Controllers
             {
                 return StatusCode(500, e.Message);
             }            
+        }
+
+        [HttpGet]
+        [Route("~/Address")]
+        public IActionResult GetAddress()
+        {
+            _studentService.GetAddress();
+            return Ok();
         }
     }
 }

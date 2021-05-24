@@ -1,4 +1,5 @@
-﻿using educacional.LayerDomain.Model;
+﻿using educacional.Domain.Model;
+using educacional.LayerDomain.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
@@ -28,6 +29,7 @@ namespace educacional.LayerInfrastructure
         public virtual DbSet<StudentSubject> StudentSubjects { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Report> Reports { get; set; }
+        public virtual DbSet<StudentAddress> Addresses { get; set; }
 
     }
 }

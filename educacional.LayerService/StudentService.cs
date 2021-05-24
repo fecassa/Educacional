@@ -1,4 +1,5 @@
 ﻿using educacional.LayerDomain.Model;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace educacional.LayerService
             var _historic = _context.Students.ToList().Count;
 
             if (_historic > 0)
-                throw new System.Exception("There are already registered students. Please, reload database scripts.");
+                throw new System.Exception("There already registered students. Please, reload database scripts.");
 
             string[] _name = { "Amanda", "Betina", "Bruna", "Carla", "Carlos", "Fabio", "Fabricio", "Fernanda", "Fernando", "Felipe", "Feliciano", "Denise", "Douglas", "Dario", "Gustavo", "Guilherme", "Juliana", "Juliano", "Thiago", "Marcelo" };
             string[] _middle = { "Cassiano", "Toledo", "Tavares", "Gomes", "Queiroz", "Pereira", "Isis", "Oliveira", "Viana", "Lima" };
@@ -40,6 +41,11 @@ namespace educacional.LayerService
                 }
             }            
             _context.SaveChanges();
+        }
+
+        public void GetAddress()
+        {
+            var _address = _context.Addresses.Include( b => b.Student).ToList();
         }
 
     }
